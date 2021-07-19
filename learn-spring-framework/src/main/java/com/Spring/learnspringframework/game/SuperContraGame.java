@@ -1,5 +1,10 @@
 package com.Spring.learnspringframework.game;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
 public class SuperContraGame implements GamingConsoleInterface {
     @Override
     public void up(){
