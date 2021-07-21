@@ -12,11 +12,12 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class LearnSpringFrameworkApplication {
 
 	public static void main(String[] args) throws BeansException {
-		ConfigurableApplicationContext context = SpringApplication.run(LearnSpringFrameworkApplication.class, args);
-		GameRunner runner = context.getBean(GameRunner.class);
+		SpringApplication.run(LearnSpringFrameworkApplication.class, args);
+		//ConfigurableApplicationContext context = SpringApplication.run(LearnSpringFrameworkApplication.class, args);
+		//GameRunner runner = context.getBean(GameRunner.class);
 		//MarioGame game = new MarioGame();
 		//SuperContraGame game = new SuperContraGame();
 		//GameRunner runner = new GameRunner(game);
-		runner.runGame();
+		//runner.runGame();
 	}
 }
